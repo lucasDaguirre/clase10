@@ -16,7 +16,7 @@ a, button {
     all: unset;
     cursor: pointer;
 }
-s
+
 li {
     list-style: none;
 }
@@ -231,6 +231,27 @@ button{
     align-items: center;
     justify-content: center;
 }
+
+/* transformaciones, animaciones, efectos inicio */
+
+.button1:hover, .button2:hover{
+    background-color: #e30eff;
+    color: #f4f4f4;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.navItem:hover{
+    color: #e30eff;
+}
+
+.contentBox:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* transformaciones, animaciones, efectos fin */
 
 
 @media only screen and (min-width: 900px) {
