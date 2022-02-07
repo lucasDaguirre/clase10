@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6em;
+}
+    
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: inherit;
+}
+
+a, button {
+    all: unset;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body{
+    background-color: #1a1a1a;
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    color: #f4f4f4;
+}
+
+button{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px #f4f4f4 solid;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.mainContainer{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* estilos de header/nav y footer inicio */
+
+.header{
+    height: 10vh;
+    display: flex;
+    border-bottom: 1px white solid;
+}
+
+.navLogo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.logoWrap{
+    height: 60%;
+}
+
+.logoWrap img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.navSpace{
+    flex: 1;
+}
+
+.navMenu{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    white-space: nowrap;
+}
+
+.navMenu button{
+    all: unset;
+    cursor: pointer;
+}
+
+.navMenu svg{
+    display: block;
+    margin: 2rem;
+}
+
+.navItem{
+    display: none;
+    margin: 0 .5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+
+.footer{
+    height: 2rem;
+    font-size: 1rem;
+    background-color: rgba(76, 0, 130, 0.5);
+    border-top: 1px #f4f4f4 solid;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* estilos de header/nav y footer final */
+
+.heroWrap{
+    height: 90vh;
+    display: flex;
+}
+
+.heroTxt{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.txtWrap h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.txtWrap p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.button1{
+    background-color: rgb(240, 240, 240);
+    color: rgb(20, 20, 20);
+}
+
+.button2{
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    
+}
+
+/* -------- */
+
+.heroImg{
+    flex: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWrap{
+    height: 80%;
+    width: 80%;
+}
+
+.imgWrap img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* -------- */
+
+.contentWrap{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    background-color: #0000004a;
+}
+
+.contentBoxes{
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+}
+
+.contentBox{
+    flex: 1;
+    height: 30rem;
+    flex-direction: column;
+    display: flex;
+    padding: 2rem;
+}
+
+.contentImg{
+    flex: 1;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.contentImg img{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+}
+
+.contentTxt{
+    flex: 1;
+}
+
+.contentTxt h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contentTxt p{
+    font-weight: 300;
+}
+
+.indexArticle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.articleText h3{
+    font-size: 2rem;
+}
+
+.articleText p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.articleImg{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .navItem{
+        display: inline;
+    }
+
+    .navMenu svg{
+        display: none;
+    }
+
+    .header{
+        padding: 0 5rem;
+    }
+    .heroImg{
+        display: flex;
+    }
+    .contentBoxes{
+        padding: 0 5rem;
+        flex-direction: row;
+    }
+
+    .articleImg{
+        display: flex;
+    }
+
+    .mainContainer{
+        text-align: start;
+    }
+
+    .contentBox{
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .contentImg{
+        max-height: 15rem;
+        min-height: 15rem;
+    }
+
+    .contentImg img{
+        height: 100%;
+        width: 100%;
+    }
+}
